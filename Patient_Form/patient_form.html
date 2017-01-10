@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+    <link rel="stylesheet" href="patient_form.css">
+</head>
+<body>
+<div id="form-container">
+    <form>
+        <!--General Information Section------------------------------------------->
+        <div class="section-title">
+            General Information
+        </div>
+        <div class="row">
+            <div class="input-field col m4">
+                <input data-key="first_name" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col m4">
+                <input data-key="last_name" id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col m4">
+                <input data-key="phone_number" id="phone_number" type="tel" class="validate">
+                <label for="phone_number">Phone Number</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col m2 offset-m4">
+                <input data-key="DOB" id="DOB" type="date" class="validate">
+                <label for="DOB" class="active">Date of Birth</label>
+            </div>
+            <div class="input-field col m1">
+                <input data-key="age" id="age" type="number" class="validate">
+                <label for="age">Age</label>
+            </div>
+            <div class="input-field col m1">
+                <input data-key="gender" id="gender" type="text" class="validate">
+                <label for="gender">Gender</label>
+            </div>
+        </div>
+        <!--General Information Section End---------------------------------------->
+
+        <!--Address Section-------------------------------------------------------->
+        <div class="section-title">
+            Address
+        </div>
+        <div class="row">
+            <div class="input-field col m5">
+                <input data-key="street" id="street" type="text" class="validate">
+                <label for="street">Street</label>
+            </div>
+            <div class="input-field col m4">
+                <input data-key="city" id="city" type="text" class="validate">
+                <label for="city">City</label>
+            </div>
+            <div class="input-field col m2">
+                <input data-key="state" id="state" type="text" class="validate">
+                <label for="state">State</label>
+            </div>
+            <div class="input-field col m1">
+                <input data-key="zip" id="zip" type="text" class="validate">
+                <label for="zip">Zip Code</label>
+            </div>
+        </div>
+        <!--Address Section End---------------------------------------------------->
+
+        <!--Emergency Contact------------------------------------------------------>
+        <div class="section-title">
+            Emergency Contact Information
+        </div>
+        <div class="row">
+            <div class="input-field col m6">
+                <input data-key="emergency_contact" id="emergency_contact" type="text" class="validate">
+                <label for="emergency_contact">Emergency Contact</label>
+            </div>
+            <div class="input-field col m6">
+                <input data-key="emergency_contact_phone" id="emergency_contact_phone" type="text" class="validate">
+                <label for="emergency_contact_phone">Emergency Contact Phone</label>
+            </div>
+        </div>
+        <!--Emergency Contact End-------------------------------------------------->
+
+        <!--Medications Section---------------------------------------------------->
+        <div id="medication-section-holder">
+            <div class="section-title">
+                Current Medications
+            </div>
+            <div class="row">
+                <div class="input-field col m6 offset-m3">
+                    <input data-key="medication_0" type="text" class="validate">
+                </div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <button id="add-medication-button" class="btn waves-effect waves-purple">Add Medication</button>
+        </div>
+        <!--Medications Section End------------------------------------------------>
+
+        <!--Family History Section------------------------------------------------->
+        <div id="family-history-section-holder">
+            <div class="section-title">
+                Family History
+            </div>
+            <div class="row">
+                <div class="input-field col m6 offset-m3">
+                    <input data-key="family_history_0" type="text" class="validate">
+                </div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <button id="add-family-history-button" class="btn waves-effect waves-purple">Add Family History</button>
+        </div>
+        <!--Family History Section End--------------------------------------------->
+
+        <!--Specialist Section----------------------------------------------------->
+        <div id="specialist-section-holder">
+            <div class="section-title">
+                Specialists
+            </div>
+            <div class="row">
+                <div class="input-field col m6">
+                    <input data-key="specialist_name_0" id="specialist_name_0" type="text" class="validate">
+                    <label for="specialist_name_0">Name</label>
+                </div>
+                <div class="input-field col m3">
+                    <input data-key="speciality_0" id="speciality_0" type="text" class="validate">
+                    <label for="speciality_0">Speciality</label>
+                </div>
+                <div class="input-field col m3">
+                    <input data-key="specialist_phone_0" id="specialist_phone_0" type="text" class="validate">
+                    <label for="specialist_phone_0">Phone</label>
+                </div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <button id="add-specialist-button" class="btn waves-effect waves-purple">Add Specialist</button>
+        </div>
+        <!--Specialist Section End------------------------------------------------->
+        <div class="button-holder">
+            <button id="submit-button" class="btn waves-effect waves-purple" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
+<script type="text/javascript" src="patient_form.js"></script>
+</body>
+</html>
