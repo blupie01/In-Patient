@@ -113,9 +113,7 @@ $("#submit-button").on("click", function(event){
     console.log(specialist_count-1);
 
     first_name = $("#first_name").val().trim();
-    console.log(first_name);
     last_name = $("#last_name").val().trim();
-    console.log(last_name);
     phone = $("#phone_number").val().trim();
     DOB = $("#DOB").val().trim();
     age = $("#age").val().trim();
@@ -127,19 +125,41 @@ $("#submit-button").on("click", function(event){
     emergency_contact = $("#emergency_contact").val().trim();
     emergency_contact_phone = $("#emergency_contact_phone").val().trim();
 
+    var new_Patient = {
+        first_name: first_name,
+        last_name: last_name,
+        phone: phone,
+        DOB: DOB,
+        age: age,
+        gender: gender,
+        street: street,
+        city: city,
+        state: state,
+        zip: zip,
+        emergency_contact: emergency_contact,
+        emergency_contact_phone: emergency_contact_phone
+    };
+
+    var medication = [];
+
     for (var m = 0; m < medication_count; m++) {
         var med_ID = "medication_" + m;
-        $("#" + med_ID).val().trim();
-        console.log($("#" + med_ID).val());
+        var med = $("#" + med_ID).val().trim();
+        medication.push(med);
     }
+
+    var family_history = [];
 
     for (var f = 0; f < family_history_count; f++) {
         var fam_hist_ID = "family_history_" + f;
-        $("#" + fam_hist_ID).val().trim();
-        console.log($("#" + fam_hist_ID).val());
+        var history = $("#" + fam_hist_ID).val().trim();
+        family_history.push(history);
     }
 
+    var specialists = [];
+
     for (var s = 0; s < specialist_count; s++) {
+        var specialist_object = {};
         var spec_name_ID = "specialist_name_" + s;
         var speciality_ID = "speciality_" + s;
         var spec_phone_ID = "specialist_phone_" + s;
@@ -148,19 +168,17 @@ $("#submit-button").on("click", function(event){
         var speciality =  $("#" + speciality_ID).val().trim();
         var specialist_phone = $("#" + spec_phone_ID).val().trim();
 
-        inPatientDatabase.ref().push({
-            spec_name_ID: name,
-            speciality_ID: speciality,
-            spec_phone_ID: specialist_phone
-        });
+        specialist_object = {name: name,
+                            speciality: speciality,
+                            specialist_phone: specialist_phone};
 
-        //
-        // console.log("here " + specialist.spec_name_ID);
-        // console.log("here " + specialist.speciality_ID);
-        // console.log("here " + specialist.spec_phone_ID);
-        //
-        // console.log($("#" + spec_name_ID).val());
-        // console.log($("#" + speciality_ID).val());
-        // console.log($("#" + spec_phone_ID).val());
+        specialists.push(specialist_object);
     }
+
+    new_Patient["medication"] = medication;
+    new_Patient["family_history"] = family_history;
+    new_Patient["specialists"] = specialists;
+    console.log(new_Patient);
+
+    inPatientDatabase.ref().push(new_Patient);
 });
