@@ -1,0 +1,55 @@
+body {
+    background: #000000;
+    background: -webkit-linear-gradient(to left, #000000 , #434343);
+    background: linear-gradient(to left, #000000 , #434343);
+}
+
+#form-container {
+    margin: 0 auto;
+    max-width: 960px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.button-holder {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    color: #f0ffff;
+}
+
+input {
+    color: #f0ffff;
+}
+
+#h2_title {
+    text-align: center;
+    color: darkseagreen;
+    background-color: cornsilk;
+}
+
+#patient_list {
+    margin: 0 auto;
+    max-width: 960px;
+    color: azure;
+}
+
+.patient {
+    display: inline-flex;
+}
+
+.patient_button {
+    width: 220px;
+}
+
+#display_patients_body {
+    text-align: center;
+}
+

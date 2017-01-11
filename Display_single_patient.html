@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+</head>
+<body>
+
+    <h2 id="h2_title">P A T I E N T &nbsp&nbsp I N F O</h2>
+    <div id="info_holder"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script id="patient_list_template" type="text/template">
+        {{#list patient_data}}
+        <h1>{{firstName}} {{lastName}}</h1>
+        <h3>Birthday: {{birthdate}}</h3>
+        <h3>Age: {{age}}</h3>
+        <h3>Medication: {{medication}}</h3>
+        {{/list}}
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
+    <script type="text/javascript" src="Display_single_patient.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+</html>
