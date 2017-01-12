@@ -23,7 +23,8 @@ $("#add-medication-button").on("click", function(event){
     var div_Row = $("<div class='row'>");
     var div_col_m6 = $("<div class='input-field col m6 offset-m3'>");
     var medication_input = $("<input type='text' class='validate'>").attr(
-                            "id", current_medication_key);
+                            "id", current_medication_key).attr(
+                            "name", current_medication_key);
     //putting all the created div's and inputs with attributes together
     var new_medication_form_line = div_Row.append(div_col_m6.append(medication_input));
     //putting to html
@@ -40,7 +41,8 @@ $("#add-family-history-button").on("click", function(event){
     var div_Row = $("<div class='row'>");
     var div_col_m6 = $("<div class='input-field col m6 offset-m3'>");
     var family_history_input = $("<input type='text' class='validate'>").attr(
-                                "id", current_fam_hist_key);
+                                "id", current_fam_hist_key).attr(
+                                "name", current_fam_hist_key);
     //putting all the created div's and inputs with attributes together
     var new_family_history_form_line = div_Row.append(div_col_m6.append(family_history_input));
     //putting to html
@@ -63,20 +65,22 @@ $("#add-specialist-button").on("click", function(event){
 
     //var's for creation of input/label tags for specialist name---------------------------
     var input_spec_name = $("<input type='text' class='validate'>").attr(
-                            "id", current_name_key);
+                            "id", current_name_key).attr("name", current_name_key);
     var label_spec_name = $("<label>Name</label>").attr("for", current_name_key);
     //-------------------------------------------------------------------------------------
 
     //var's for creation of input/label tags for speciality--------------------------------
     var input_speciality = $("<input type='text' class='validate'>").attr(
-                            "id", current_spec_key);
+                            "id", current_spec_key).attr("name", current_spec_key);
     var label_speciality = $("<label>Speciality</label>").attr("for", current_spec_key);
     //-------------------------------------------------------------------------------------
 
     //var's for creation of input/label tags for specialist phone--------------------------
-    var input_spec_phone = $("<input type='text' class='validate'>").attr(
-                            "id", current_spec_phone_key);
-    var label_spec_phone = $("<label>Phone</label>").attr("for", current_spec_phone_key);
+    var phone_format = "\\d{3}[\\\-]\\d{3}[\\\-]\\d{4}";
+    var input_spec_phone = $("<input type='tel' class='validate'>").attr(
+                            "id", current_spec_phone_key).attr("name", current_spec_phone_key).attr(
+                            "pattern", phone_format);
+    var label_spec_phone = $("<label>Phone 999-999-9999</label>").attr("for", current_spec_phone_key);
     //-------------------------------------------------------------------------------------
 
     //putting all the created div's and inputs with attributes together
@@ -181,4 +185,10 @@ $("#submit-button").on("click", function(event){
     console.log(new_Patient);
 
     inPatientDatabase.ref().push(new_Patient);
+    window.location.href='patients.html';
+});
+
+$("#back-button").on("click", function(event){
+    event.preventDefault();
+    window.location.href='patients.html';
 });

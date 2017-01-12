@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Patient Form</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
-    <link rel="stylesheet" href="patient_form.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 </head>
 <body>
@@ -17,29 +17,30 @@
         </div>
         <div class="row">
             <div class="input-field col m4">
-                <input id="first_name" type="text" class="validate">
-                <label id="first_name" for="first_name">First Name</label>
+                <input id="first_name" name="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
             </div>
             <div class="input-field col m4">
-                <input id="last_name" type="text" class="validate">
+                <input id="last_name" name="last_name" type="text" class="validate">
                 <label for="last_name">Last Name</label>
             </div>
             <div class="input-field col m4">
-                <input id="phone_number" type="tel" class="validate">
-                <label for="phone_number">Phone Number</label>
+                <input id="phone_number" name="phone_number" type="tel"
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="validate">
+                <label for="phone_number">Phone Number 999-999-9999</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col m2 offset-m4">
-                <input id="DOB" type="date" class="validate">
+                <input id="DOB" name="DOB" type="date">
                 <label for="DOB" class="active">Date of Birth</label>
             </div>
             <div class="input-field col m1">
-                <input id="age" type="number" class="validate">
+                <input id="age" name="age" type="number" class="validate">
                 <label for="age">Age</label>
             </div>
             <div class="input-field col m1">
-                <input id="gender" type="text" class="validate">
+                <input id="gender" name="gender" type="text" class="validate">
                 <label for="gender">Gender</label>
             </div>
         </div>
@@ -51,19 +52,19 @@
         </div>
         <div class="row">
             <div class="input-field col m5">
-                <input id="street" type="text" class="validate">
+                <input id="street" name="street" type="text" class="validate">
                 <label for="street">Street</label>
             </div>
             <div class="input-field col m4">
-                <input id="city" type="text" class="validate">
+                <input id="city" name="city" type="text" class="validate">
                 <label for="city">City</label>
             </div>
             <div class="input-field col m2">
-                <input id="state" type="text" class="validate">
+                <input id="state" name="state" type="text" class="validate">
                 <label for="state">State</label>
             </div>
             <div class="input-field col m1">
-                <input id="zip" type="text" class="validate">
+                <input id="zip" name="zip" type="text" class="validate">
                 <label for="zip">Zip Code</label>
             </div>
         </div>
@@ -75,12 +76,13 @@
         </div>
         <div class="row">
             <div class="input-field col m6">
-                <input id="emergency_contact" type="text" class="validate">
+                <input id="emergency_contact" name="emergency_contact" type="text" class="validate">
                 <label for="emergency_contact">Emergency Contact</label>
             </div>
             <div class="input-field col m6">
-                <input id="emergency_contact_phone" type="text" class="validate">
-                <label for="emergency_contact_phone">Emergency Contact Phone</label>
+                <input id="emergency_contact_phone" name="emergency_contact_phone" type="tel"
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="validate">
+                <label for="emergency_contact_phone">Emergency Contact Phone 999-999-9999</label>
             </div>
         </div>
         <!--Emergency Contact End-------------------------------------------------->
@@ -92,12 +94,14 @@
             </div>
             <div class="row">
                 <div class="input-field col m6 offset-m3">
-                    <input id="medication_0" type="text" class="validate">
+                    <input id="medication_0" name="medication_0" type="text" class="validate">
                 </div>
             </div>
         </div>
         <div class="button-holder">
-            <button id="add-medication-button" class="btn waves-effect waves-purple">Add Medication</button>
+            <button id="add-medication-button" class="btn waves-effect waves-purple">
+                Add Medication
+            </button>
         </div>
         <!--Medications Section End------------------------------------------------>
 
@@ -108,12 +112,14 @@
             </div>
             <div class="row">
                 <div class="input-field col m6 offset-m3">
-                    <input id="family_history_0" type="text" class="validate">
+                    <input id="family_history_0" name="family_history_0" type="text" class="validate">
                 </div>
             </div>
         </div>
         <div class="button-holder">
-            <button id="add-family-history-button" class="btn waves-effect waves-purple">Add Family History</button>
+            <button id="add-family-history-button" class="btn waves-effect waves-purple">
+                Add Family History
+            </button>
         </div>
         <!--Family History Section End--------------------------------------------->
 
@@ -124,16 +130,17 @@
             </div>
             <div class="row">
                 <div class="input-field col m6">
-                    <input id="specialist_name_0" type="text" class="validate">
+                    <input id="specialist_name_0" name="specialist_name_0" type="text" class="validate">
                     <label for="specialist_name_0">Name</label>
                 </div>
                 <div class="input-field col m3">
-                    <input id="speciality_0" type="text" class="validate">
+                    <input id="speciality_0" name="speciality_0" type="text" class="validate">
                     <label for="speciality_0">Speciality</label>
                 </div>
                 <div class="input-field col m3">
-                    <input id="specialist_phone_0" type="text" class="validate">
-                    <label for="specialist_phone_0">Phone</label>
+                    <input id="specialist_phone_0" name="specialist_phone_0" type="text"
+                           pattern="\d{3}[\-]\d{3}[\-]\d{4}" class="validate">
+                    <label for="specialist_phone_0">Phone 999-999-9999</label>
                 </div>
             </div>
         </div>
@@ -142,12 +149,15 @@
         </div>
         <!--Specialist Section End------------------------------------------------->
         <div class="button-holder">
-            <button id="submit-button" class="btn waves-effect waves-purple" type="submit">Submit</button>
+            <button id="back-button" class="btn">Back</button>
+            <button id="submit-button" class="btn" type="submit">
+                Submit
+            </button>
         </div>
     </form>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
-<script type="text/javascript" src="patient_form.js"></script>
+<script type="text/javascript" src="assets/javascript/patient_form.js"></script>
 </body>
 </html>

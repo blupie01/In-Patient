@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="881b9563-c3b9-423c-9cd4-7f7b4287f667" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Display_all_patients.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Display_all_patients.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Display_single_patient.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Display_single_patient.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Display_single_patient.js" afterPath="" />
+    <list default="true" id="c5d049de-7cbd-45e6-92f7-33144453c597" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/.idea/Patient_Form.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patient_Form_Firebase_Test/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/patients.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Login.html" afterPath="$PROJECT_DIR$/Login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/Login.css" afterPath="$PROJECT_DIR$/assets/css/Login.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patients.html" afterPath="$PROJECT_DIR$/patients.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,43 +30,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="patients.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/patients.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patients.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patients.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3178">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>fam_hist</find>
-      <find>child</find>
-    </findStrings>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,31 +38,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/script.js" />
-        <option value="$PROJECT_DIR$/patient_list.html" />
-        <option value="$PROJECT_DIR$/API_test.html" />
-        <option value="$PROJECT_DIR$/patient_list.js" />
-        <option value="$PROJECT_DIR$/patient_form.css" />
-        <option value="$PROJECT_DIR$/patient_form.js" />
         <option value="$PROJECT_DIR$/patient_form.html" />
-        <option value="$PROJECT_DIR$/Patient_Form/patient_form.html" />
-        <option value="$PROJECT_DIR$/Patient_Form_Backup/patient_form.html" />
-        <option value="$PROJECT_DIR$/Login.js" />
-        <option value="$PROJECT_DIR$/Login.css" />
-        <option value="$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.js" />
-        <option value="$PROJECT_DIR$/Patient_Form_Firebase_Test/Diplay_single_patient.html" />
-        <option value="$PROJECT_DIR$/Display_single_patient.css" />
-        <option value="$PROJECT_DIR$/handlebars_test/Display_all_patients.html" />
-        <option value="$PROJECT_DIR$/Display_all_patients.css" />
-        <option value="$PROJECT_DIR$/Display_single_patient.js" />
-        <option value="$PROJECT_DIR$/Display_single_patient.html" />
-        <option value="$PROJECT_DIR$/Login.html" />
-        <option value="$PROJECT_DIR$/assets/css/Login.css" />
-        <option value="$PROJECT_DIR$/Display_all_patients.html" />
-        <option value="$PROJECT_DIR$/Display_all_patients.js" />
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/patients.html" />
-        <option value="$PROJECT_DIR$/login.html" />
+        <option value="$PROJECT_DIR$/patient_form.js" />
+        <option value="$PROJECT_DIR$/assets/javascript/patients.js" />
+        <option value="$PROJECT_DIR$/assets/javascript/login.js" />
       </list>
     </option>
   </component>
@@ -126,7 +72,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -136,20 +82,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="In-Patient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="In-Patient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="In-Patient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Patient_Form_Firebase_Test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -191,30 +123,16 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jeffrey\Desktop\In-Patient" />
-      <recent name="C:\Users\Jeffrey\Desktop\In-Patient\assets\css" />
-      <recent name="C:\Users\Jeffrey\Desktop\In-Patient\assets\javascript" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Jeffrey\Desktop\In-Patient\assets\css" />
-      <recent name="C:\Users\Jeffrey\Desktop\In-Patient" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -282,49 +200,39 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="881b9563-c3b9-423c-9cd4-7f7b4287f667" name="Default" comment="" />
-      <created>1483679868584</created>
+      <changelist id="c5d049de-7cbd-45e6-92f7-33144453c597" name="Default" comment="" />
+      <created>1484006738279</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1483679868584</updated>
-      <workItem from="1483679869699" duration="5230000" />
-      <workItem from="1483739005462" duration="12762000" />
-      <workItem from="1483811604004" duration="1261000" />
-      <workItem from="1483812880153" duration="4331000" />
-      <workItem from="1483819492297" duration="28595000" />
-      <workItem from="1483896851900" duration="12622000" />
-      <workItem from="1483993656591" duration="3615000" />
-      <workItem from="1484075553252" duration="30336000" />
-      <workItem from="1484151095011" duration="5561000" />
-      <workItem from="1484174995080" duration="12874000" />
-      <workItem from="1484195192596" duration="15315000" />
-      <workItem from="1484214358032" duration="3220000" />
+      <updated>1484006738279</updated>
+      <workItem from="1484006739842" duration="9611000" />
+      <workItem from="1484262020037" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135722000" />
+    <option name="totallyTimeSpent" value="10114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="7" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20906201" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,128 +242,64 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/patient_list.html" />
-    <entry file="file://$PROJECT_DIR$/API_test.html" />
-    <entry file="file://$PROJECT_DIR$/patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/script.js" />
-    <entry file="file://$PROJECT_DIR$/patient_list.html" />
-    <entry file="file://$PROJECT_DIR$/patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/script.js" />
-    <entry file="file://$PROJECT_DIR$/patient_list.html" />
-    <entry file="file://$PROJECT_DIR$/patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/script.js" />
-    <entry file="file://$PROJECT_DIR$/patient_list.html" />
-    <entry file="file://$PROJECT_DIR$/script.js" />
-    <entry file="file://$PROJECT_DIR$/API_test.html" />
-    <entry file="file://$PROJECT_DIR$/patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/patient_form.js" />
-    <entry file="file://$PROJECT_DIR$/patient_form.css" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form/reset.css" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form/patient_form.css" />
-    <entry file="file://$PROJECT_DIR$/patient_list.html" />
-    <entry file="file://$PROJECT_DIR$/patient_list.js" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form_Backup/patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form_Backup/patient_form.css" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form/patient_form.js" />
-    <entry file="file://$PROJECT_DIR$/Login.js" />
-    <entry file="file://$PROJECT_DIR$/reset.css" />
-    <entry file="file://$PROJECT_DIR$/script.js" />
-    <entry file="file://$PROJECT_DIR$/Login.css" />
-    <entry file="file://$PROJECT_DIR$/../patient_form.css" />
-    <entry file="file://$PROJECT_DIR$/../patient_form.js" />
-    <entry file="file://$PROJECT_DIR$/../patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/Login_Page/Login.html" />
-    <entry file="file://$PROJECT_DIR$/Diplay_single_patient.html" />
-    <entry file="file://$PROJECT_DIR$/Display_single_patient.css" />
-    <entry file="file://$PROJECT_DIR$/handlebars_test/patient_list.js" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.css">
+    <entry file="file://$PROJECT_DIR$/patient_form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/Javascript.css" />
-    <entry file="file://$PROJECT_DIR$/Display_all_patients.css" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form/patient_form.html" />
-    <entry file="file://$PROJECT_DIR$/handlebars_test/script.js" />
-    <entry file="file://$PROJECT_DIR$/handlebars_test/patient_list.html" />
-    <entry file="file://$PROJECT_DIR$/Display_single_patient.js" />
-    <entry file="file://$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="150" column="28" lean-forward="false" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Display_single_patient.html" />
-    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Display_all_patients.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="171" column="18" lean-forward="true" selection-start-line="171" selection-start-column="18" selection-end-line="171" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Display_all_patients.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="79" column="26" lean-forward="true" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Patient_Form_Firebase_Test/patient_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patients.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3178">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../patient_list.js" />
+    <entry file="file://$PROJECT_DIR$/patient_form.js" />
+    <entry file="file://$PROJECT_DIR$/patient_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="125" column="48" lean-forward="false" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/patients.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="196" column="3" lean-forward="true" selection-start-line="196" selection-start-column="3" selection-end-line="196" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patients.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+        <state relative-caret-position="2420">
+          <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>
