@@ -30,12 +30,12 @@ input {
 }
 
 #h2_title {
-    text-align: center;
+    /*text-align: center;*/
     color: darkseagreen;
     background-color: cornsilk;
 }
 
-#patient_list {
+#patient_list, #info-holder {
     margin: 0 auto;
     max-width: 960px;
     color: azure;
@@ -52,4 +52,3 @@ input {
 #display_patients_body {
     text-align: center;
 }
-
