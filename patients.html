@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patient List</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+</head>
+<body id="display_patients_body">
+
+    <div id="all_patients">
+        <h2 id="h2_title">P A T I E N T S</h2>
+        <div id="patient_list">
+            <div class="row">
+                <div class="col m3">Name</div>
+                <div class="col m3">Gender</div>
+                <div class="col m3">DOB</div>
+                <div class="col m3">Phone</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="single_patient">
+        <h2 id="h2_title">P A T I E N T &nbsp&nbsp I N F O</h2>
+        <div id="info_holder">
+            <div id="first_patient_row">
+                <div class="row">
+                    <div class="input-field col m4">
+                        First Name
+                    </div>
+                    <div class="input-field col m4">
+                        Last Name
+                    </div>
+                    <div class="input-field col m4">
+                        Phone Number
+                    </div>
+                </div>
+            </div>
+            <div id="second_patient_row">
+                <div class="row">
+                    <div class="input-field col m2 offset-m3">
+                        Date of Birth
+                    </div>
+                    <div class="input-field col m2">
+                        Age
+                    </div>
+                    <div class="input-field col m2">
+                        Gender
+                    </div>
+                </div>
+            </div>
+            <div id="third_patient_row">
+                <div class="section-title">
+                    Address
+                </div>
+                <div class="row">
+                    <div class="input-field col m3 offset-m1">
+                        Street
+                    </div>
+                    <div class="input-field col m3">
+                        City
+                    </div>
+                    <div class="input-field col m2">
+                        State
+                    </div>
+                    <div class="input-field col m2">
+                        Zip Code
+                    </div>
+                </div>
+            </div>
+            <div id="fourth_patient_row">
+                <div class="section-title">
+                    Emergency Contact Information
+                </div>
+                <div class="row">
+                    <div class="input-field col m4 offset-m2">
+                        Emergency Contact
+                    </div>
+                    <div class="input-field col m4">
+                        Emergency Contact Phone
+                    </div>
+                </div>
+            </div>
+            <div id="medication_container"></div>
+            <div id="family_history_container"></div>
+            <div id="specialist_container"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
+    <script type="text/javascript" src="patients.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+</html>
