@@ -11,6 +11,9 @@ inPatientDatabase = firebase.database();
 
 $(document).ready(function(){
 
+    //initialize modal by ID
+    $("#drug_info_modal").modal();
+
     $("#single_patient").hide();
 
     $("#add_patient_btn").on("click", function(event){
@@ -135,11 +138,72 @@ $(document).ready(function(){
                     $("#medication_container").append(medication_header);
                     //loop to create medication buttons
                     for (var m = 0; m < medication.length; m++) {
-                        var med_btn = $("<button class='waves-effect waves-light deep-purple darken-4'>" + medication[m] + "</button>");
+                        //capitalize drug name
+                        var capitalized_drug = medication[m].charAt(0).toUpperCase() +
+                            medication[m].slice(1);
+                        //create button
+                        var med_btn = $("<button class='med-btn waves-effect waves-light deep-purple darken-4'>"
+                            + capitalized_drug + "</button>");
+                        med_btn.attr("data-drug-name", medication[m]);
+                        med_btn.attr("data-target", "drug_info_modal");
 
                         $("#medication_container").append(med_btn);
                     };
                 };
+
+                //SOMEWHERE (not sure on scoping) have on click event for class=med-btn
+                //get data-rxcui and use second API to get list of drugs that interact with selected drug
+
+                $(".med-btn").on("click", function(event){
+                    event.preventDefault();
+                    //empty the modal container
+                    $("#drug_info_container").empty();
+                    var rxcui_ID = "";
+                    //var to hold drug_name from data-attr
+                    var drug_name = $(this).data("drug-name");
+                    //var's for modal header
+                    var modal_heading = "Interactions for " + drug_name;
+                    var completed_modal_header = $("<h4 id='modal_header'>").append(modal_heading);
+                    $("#drug_info_container").append(completed_modal_header);
+
+                   //vars for queryURL's
+                    var rxcuiURL = "https://rxnav.nlm.nih.gov/REST/drugs.json?name=" + drug_name;
+
+                    $.ajax({
+                        url: rxcuiURL,
+                        method: "GET"
+                    }).done(function(response){
+                        //code from API
+                        rxcui_ID = response.drugGroup.conceptGroup[1].conceptProperties[0].rxcui;
+
+                        var drugIntURL = "https://rxnav.nlm.nih.gov/REST/interaction/interaction.json?rxcui=" +
+                                        rxcui_ID + "&sources=DrugBank";
+
+                        $.ajax({
+                            url: drugIntURL,
+                            method: "GET"
+                        }).done(function(response2){
+                            var drug_name_from_database = response2.interactionTypeGroup[0].interactionType[0].minConceptItem.name;
+                            drug_name_from_database = drug_name_from_database.charAt(0).toUpperCase() +
+                                                        drug_name_from_database.slice(1);
+
+                            var alt_name_header = $("<h5 id='alt_name_head'>").append(drug_name_from_database);
+                            $("#drug_info_container").append(alt_name_header);
+
+                            var path_to_drug_pairings = response2.interactionTypeGroup[0].interactionType[0].interactionPair;
+
+                            for (var a = 0; a < 11; a++) {
+                                //vars for pathing to info
+                                var interaction_path = path_to_drug_pairings[a].interactionConcept;
+                                var interacting_drug = interaction_path[1].sourceConceptItem.name;
+                                var interaction_description = path_to_drug_pairings[a].description;
+
+                                console.log("Interacting Drug: " + interacting_drug);
+                                console.log("Interacting Description: " + interaction_description);
+                            }
+                        });
+                    });
+                });
 
                 //var for family history header
                 var fam_hist_row = new $("<div class='row'>");

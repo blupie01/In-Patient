@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script type="text/javascript">
+
+    var queryURL = "https://rxnav.nlm.nih.gov/REST/drugs.json?name=lipitor";
+    // Performing our AJAX GET request
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).done(function(response) {
+        //find the drug name
+        var drug_name = response.drugGroup.name;
+        console.log("drug name: " + drug_name);
+
+        //find all drug doses
+        var get_name_and_rxcui = response.drugGroup.conceptGroup[1].conceptProperties;
+        console.log(get_name_and_rxcui);
+
+        for (var i = 0; i < get_name_and_rxcui.length; i++) {
+            //var to get name -- synonym in api
+            var synonym = get_name_and_rxcui[i].synonym;
+            var rxcui = get_name_and_rxcui[i].rxcui;
+            console.log("name: " + synonym);
+            console.log("rxcui: " + rxcui);
+        }
+    });
+
+    var queryURL2 = "https://rxnav.nlm.nih.gov/REST/interaction/interaction.json?rxcui=384455&sources=DrugBank";
+
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).done(function(response) {
+
+    });
+
+
+
+
+//works-----------------------------------------------------------------------------------
+    //vars for ajax
+    var rxcuiURL = "https://rxnav.nlm.nih.gov/REST/drugs.json?name=" + medication[m];
+    var rxcui_code = "";
+
+    //create button
+    var med_btn = $("<button class='med-btn waves-effect waves-light deep-purple darken-4'>"
+        + medication[m] + "</button>");
+
+    //use AJAX and API to get rxcui
+    $.ajax({
+        url: rxcuiURL,
+        method: "GET"
+    }).done(function(response) {
+        //code from API
+        rxcui_code = response.drugGroup.conceptGroup[1].conceptProperties[0].rxcui;
+        console.log(rxcui_code);
+        //give med_btn attr data-name
+        med_btn.attr("data-rxcui", rxcui_code);
+    });
+
+</script>
+</body>
+</html>

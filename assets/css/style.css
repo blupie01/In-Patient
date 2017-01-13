@@ -69,3 +69,7 @@ button {
     margin-top: 5px;
     font-size: 20px;
 }
+
+#drug_info_container {
+    color: black;
+}
