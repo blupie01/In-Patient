@@ -33,20 +33,21 @@ input {
 }
 
 #patient_list, #info_holder {
+    color: azure;
     margin: 0 auto;
     max-width: 960px;
-    color: azure;
-}
-
-.patient {
-    display: inline-flex;
 }
 
 .patient_button {
     width: 220px;
+    margin: 0;
+    margin-top: -10%;
+    font-size: 25px;
+    background-color: transparent;
+    color: lightseagreen;
 }
 
-#display_patients_body {
+#display_patients_body, #patient_list, #info_holder {
     text-align: center;
 }
 
@@ -83,4 +84,26 @@ button {
 #alt_name_head {
     border-bottom: 3px solid black;
     margin-bottom: 5px;
+}
+
+#btn_holder {
+    margin-top: -2%;
+    margin-bottom: 15px;
+    background-color: cornsilk;
+}
+
+#add_patient_btn {
+    /*position: absolute;*/
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#log_out_btn {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-botton: 20px;
+}
+
+.title_underline {
+    border-bottom: 1px solid aliceblue;
 }

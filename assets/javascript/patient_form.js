@@ -190,5 +190,5 @@ $("#submit-button").on("click", function(event){
 
 $("#back-button").on("click", function(event){
     event.preventDefault();
-    window.location.href='patients.html';
+    window.location.href="patients.html";
 });
