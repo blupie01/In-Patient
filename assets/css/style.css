@@ -73,3 +73,14 @@ button {
 #drug_info_container {
     color: black;
 }
+
+.interact_description {
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+#alt_name_head {
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+}

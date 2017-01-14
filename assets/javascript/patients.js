@@ -156,8 +156,7 @@ $(document).ready(function(){
 
                 $(".med-btn").on("click", function(event){
                     event.preventDefault();
-                    //empty the modal container
-                    $("#drug_info_container").empty();
+                    $("#drug_info_container").empty()
                     var rxcui_ID = "";
                     //var to hold drug_name from data-attr
                     var drug_name = $(this).data("drug-name");
@@ -187,19 +186,29 @@ $(document).ready(function(){
                             drug_name_from_database = drug_name_from_database.charAt(0).toUpperCase() +
                                                         drug_name_from_database.slice(1);
 
-                            var alt_name_header = $("<h5 id='alt_name_head'>").append(drug_name_from_database);
+                            var complete_drug_title = "Alt Name: " + drug_name_from_database;
+                            var alt_name_header = $("<h5 id='alt_name_head'>").append(complete_drug_title);
                             $("#drug_info_container").append(alt_name_header);
 
                             var path_to_drug_pairings = response2.interactionTypeGroup[0].interactionType[0].interactionPair;
 
                             for (var a = 0; a < 11; a++) {
-                                //vars for pathing to info
+                                //var for pathing to info
                                 var interaction_path = path_to_drug_pairings[a].interactionConcept;
-                                var interacting_drug = interaction_path[1].sourceConceptItem.name;
+                                //vars for interacting drug name and description
+                                var interacting_drug = interaction_path[1].minConceptItem.name;
                                 var interaction_description = path_to_drug_pairings[a].description;
 
-                                console.log("Interacting Drug: " + interacting_drug);
-                                console.log("Interacting Description: " + interaction_description);
+                                var interacting_drug_header = "Interacting Drug: " + interacting_drug;
+                                var interacting_drug_description = "Interaction: " + interaction_description;
+
+                                var complete_interact_header = $("<h6 class='interact_head'>").append(
+                                                                interacting_drug_header);
+                                var complete_interact_description = $("<p class='interact_description'>").append(
+                                                                interacting_drug_description);
+
+                                $("#drug_info_container").append(complete_interact_header);
+                                $("#drug_info_container").append(complete_interact_description);
                             }
                         });
                     });
